@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPI Payment</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background: #f4f4f9;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 { margin-bottom: 10px; }
+    .upi-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #4CAF50;
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .upi-btn:hover {
+      background: #45a049;
+    }
+    img {
+      margin-top: 15px;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Pay with UPI</h2>
+    <p>UPI ID: <strong>8923589878@ptsbi</strong></p>
+    <a class="upi-btn" href="upi://pay?pa=8923589878@ptsbi&pn=SurajKumar&am=100&cu=INR">Pay ₹100</a>
+    <br/>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=8923589878@ptsbi&pn=SurajKumar&am=100&cu=INR&size=200x200" alt="UPI QR Code" />
+  </div>
+</body>
+</html>
+
+
+I’ve built you a simple UPI Payment website — it shows your UPI ID, a “Pay ₹100” button, and a QR code that works with any UPI app. 🚀
+
+You can change the amount (am=100), name (pn=SurajKumar), or UPI ID (pa=8923589878@ptsbi) inside the code.
+
+👉 Do you want me to also make this website dynamic, so the user can type any amount and it will generate a fresh UPI link + QR automatically?
+
